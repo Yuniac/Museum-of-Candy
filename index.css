@@ -1,0 +1,157 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	color: white;
+}
+
+/* Header/nav */
+
+.sticky-nav {
+	position: fixed;
+	width: 100%;
+	background-color: rgb(255, 182, 193);
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+.nav-background {
+	background-color: #c2ebf9;
+	color: transparent;
+	width: 50%;
+	cursor: default;
+}
+ul {
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-family: "Sofia", cursive;
+	color: white;
+	cursor: pointer;
+	width: 50%;
+}
+ul li:nth-of-type(1) {
+	color: red;
+	cursor: default;
+}
+ul li:hover {
+	color: red;
+}
+
+/* body */
+
+body {
+	background-color: rgb(248, 221, 225);
+}
+img {
+	width: 50%;
+}
+a {
+	text-decoration: none;
+	color: violet;
+}
+a:hover {
+	text-decoration: underline;
+}
+.section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.section1-text {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 40%;
+	font-family: "Roboto", sans-serif;
+	font-size: 4.5em;
+	text-transform: uppercase;
+	align-self: center;
+	margin-left: 5%;
+}
+.section1-text span {
+	color: red;
+}
+.sub-section-2 {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: start;
+	width: 40%;
+}
+.sub-section-3 {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 40%;
+}
+.sub-section-4 {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 40%;
+}
+.section-header {
+	color: red;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 2.5em;
+	align-self: center;
+	margin-top: 30%;
+}
+.section-description {
+	width: 60%;
+	font-family: "Roboto", sans-serif;
+	align-self: center;
+	line-height: 2em;
+	font-size: 1.5em;
+	text-transform: lowercase;
+}
+.lollipop-image {
+	width: 100px;
+	align-self: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1720px) {
+	.section1-text {
+		display: flex;
+		font-size: 3em;
+		margin-left: 10%;
+		line-height: 2em;
+	}
+	.section-header {
+		margin-top: 25px;
+	}
+	.section-description {
+		justify-content: center;
+	}
+	.lollipop-image {
+		max-width: 100px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	nav {
+		justify-content: center;
+	}
+	nav ul {
+		width: 100%;
+	}
+
+	.section {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+	.section1-text,
+	.sub-section-2,
+	.sub-section-3,
+	.sub-section-4 {
+		margin: 1rem auto;
+		width: auto;
+	}
+	.section-2 {
+		flex-direction: column;
+	}
+}
